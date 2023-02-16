@@ -36,5 +36,5 @@ export interface Method {
 
 export interface GlobalConfig {
   config: configTypes | undefined;
-  setConfig: Function;
+  setConfig: (val: configTypes) => any;
 }

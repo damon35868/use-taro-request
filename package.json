@@ -1,7 +1,7 @@
 {
-  "name": "use-miniprogram-request",
-  "version": "1.0.2",
-  "description": "基于Taro及react开发的小程序网络请求HOOKS",
+  "name": "use-taro-request",
+  "version": "0.0.2",
+  "description": "基于Taro及React开发的网络请求HOOKS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

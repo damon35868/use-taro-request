@@ -5,7 +5,7 @@ import requestConfig from "./config";
 
 export const globalConfig: GlobalConfig = requestConfig;
 
-export const useRequest = ({ url, method = "POST", params = {} }: requestOptions, reqConfig?: configOptions) => {
+export const useTaroRequest = ({ url, method = "POST", params = {} }: requestOptions, reqConfig?: configOptions) => {
   const { manual } = reqConfig || {};
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
