@@ -18,7 +18,5 @@
   "dependencies": {
     "@tarojs/taro": "^3.6.1"
   },
-  "files": [
-    "lib/**/*"
-  ]
+  "files": ["lib/**/*"]
 }
