@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { request } from "@tarojs/taro";
-import { configOptions, requestOptions } from "./types";
+import { GlobalConfig, configOptions, requestOptions } from "./types";
 import requestConfig from "./config";
+
+export const globalConfig: GlobalConfig = requestConfig;
 
 export const useRequest = ({ url, method = "POST", params = {} }: requestOptions, reqConfig?: configOptions) => {
   const { manual } = reqConfig || {};
@@ -9,7 +11,7 @@ export const useRequest = ({ url, method = "POST", params = {} }: requestOptions
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const { config } = requestConfig;
+  const { config } = requestConfig || {};
   const { baseUrl, header, ...otherConfig } = config || {};
 
   const refetch = async () => {

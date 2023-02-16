@@ -1,8 +1,9 @@
 {
   "name": "use-miniprogram-request",
-  "version": "1.0.0",
-  "description": "基于react开发的小程序网络请求HOOKS",
-  "main": "index.ts",
+  "version": "1.0.1",
+  "description": "基于Taro及react开发的小程序网络请求HOOKS",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -10,11 +11,14 @@
   "author": "D.M",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.0.28",
     "react": "^18.2.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "@tarojs/taro": "^3.6.1"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }

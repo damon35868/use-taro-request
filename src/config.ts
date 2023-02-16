@@ -1,7 +1,7 @@
 import { configTypes } from "./types";
 
 class Config {
-  public config: configTypes;
+  public config: configTypes | undefined;
 
   setConfig(config: configTypes) {
     if (!config) throw new Error("参数错误");

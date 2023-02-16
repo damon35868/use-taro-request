@@ -33,3 +33,8 @@ export interface Method {
   /** HTTP 请求 CONNECT */
   CONNECT;
 }
+
+export interface GlobalConfig {
+  config: configTypes | undefined;
+  setConfig: Function;
+}
