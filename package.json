@@ -1,6 +1,6 @@
 {
   "name": "use-taro-request",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于Taro及React开发的网络请求HOOKS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
