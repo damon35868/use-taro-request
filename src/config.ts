@@ -1,12 +1,11 @@
 import { configTypes } from "./types";
 
-class Config {
-  public config: configTypes | undefined;
+export const config: configTypes = {
+  baseUrl: "",
+  header: {}
+};
 
-  setConfig(config: configTypes) {
-    if (!config) throw new Error("参数错误");
-    this.config = config;
-  }
+export function taroRequestConfig(newConfig: configTypes) {
+  if (typeof newConfig !== "object") return;
+  Object.assign(config, newConfig);
 }
-
-export default new Config();

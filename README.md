@@ -7,11 +7,12 @@ yarn add use-taro-request
 ### 全局配置，在入口文件使用
 
 ```tsx static
-import { globalConfig } from 'use-taro-request'
-globalConfig.setConfig({
+import { taroRequestConfig } from 'use-taro-request'
+taroRequestConfig({
     baseUrl: 'https://test.com';
     header: {},
     timeout: 3000;
+    // ...
 })
 ```
 
@@ -30,11 +31,9 @@ import { useTaroRequest } from "use-taro-request";
 
 const { data, loading, error, refetch } = useTaroRequest(
   {
-    url: "/shop/list",
+    url: "/list",
     params: {
-      page: 1,
-      pageSize: 10,
-      orderBy: "id asc"
+      //...
     }
   },
   { manual: true }
