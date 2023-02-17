@@ -24,8 +24,6 @@ yarn add use-taro-request
 
 ## Usage / 使用
 
-To use the component, first import `Marquee` into your file:
-
 ```jsx
 import { useTaroRequest } from "use-taro-request";
 
@@ -50,7 +48,7 @@ const { data, loading, error, refetch } = useTaroRequest(
 );
 ```
 
-## taro request base props
+## taro 请求配置
 
 | Property  | Type     | Default | Description  |
 | :-------- | :------- | :------ | :----------- |
@@ -58,7 +56,7 @@ const { data, loading, error, refetch } = useTaroRequest(
 | `header`  | `object` | `{}`    | 请求头       |
 | `timeout` | `number` | `0`     | 请求 timeout |
 
-## taro request hooks props
+## taro request hooks 配置
 
 | Property | Type      | Default | Description      |
 | :------- | :-------- | :------ | :--------------- |
