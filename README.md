@@ -10,7 +10,31 @@
 
 ## Installation / 安装
 
-If you're using `npm`, in the command prompt run:
+`npm`
+
+```sh
+npm install use-taro-request --save
+```
+
+`yarn`
+
+```sh
+yarn add use-taro-request
+```
+
+## Config / 配置
+
+使用 `taroRequestConfig` 在入口文件中导入并全局配置
+
+```jsx
+import { taroRequestConfig } from "use-taro-request";
+
+taroRequestConfig({
+  baseUrl: 'https://example.com'
+  header:{}
+  // ...
+})
+```
 
 ```sh
 npm install use-taro-request --save
@@ -27,7 +51,7 @@ yarn add use-taro-request
 ```jsx
 import { useTaroRequest } from "use-taro-request";
 
-const { data, loading, error, refetch } = useTaroRequest({ url: "/test" });
+const { data, loading, error, refetch } = useTaroRequest({ url: "/list" });
 ```
 
 ### manual / 手动触发请求
