@@ -24,26 +24,16 @@ yarn add use-taro-request
 
 ## Config / 配置
 
-使用 `taroRequestConfig` 在入口文件中导入并全局配置
+使用 `taroRequestConfig` 在程序入口文件，`app.tsx`或者`main.ts`等中导入并全局配置
 
 ```jsx
 import { taroRequestConfig } from "use-taro-request";
 
 taroRequestConfig({
-  baseUrl: 'https://example.com'
-  header:{}
+  baseUrl: "https://example.com",
+  header: {}
   // ...
-})
-```
-
-```sh
-npm install use-taro-request --save
-```
-
-If you're using `yarn`, run:
-
-```sh
-yarn add use-taro-request
+});
 ```
 
 ## Usage / 使用
